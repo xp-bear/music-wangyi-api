@@ -290,7 +290,7 @@ async function consturctServer(moduleDefs) {
  * @returns {Promise<import('express').Express & ExpressExtension>}
  */
 async function serveNcmApi(options) {
-  const port = Number(options.port || process.env.PORT || '5000')
+  const port = Number(options.port || process.env.PORT || '5001')
   const host = options.host || process.env.HOST || ''
 
   const checkVersionSubmission =
